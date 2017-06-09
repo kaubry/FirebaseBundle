@@ -1,0 +1,30 @@
+{
+  "name" : "watershine/firebase-bundle",
+  "description" : "Symfony 3 bundle to integrate Firebase functionalities",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "FirebaseBundle",
+    "email" : "kevin@ubry.ch"
+  }],
+  "keywords" : [
+    "Firebase Symfony"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Watershine\\FirebaseBundle" : ""
+    }
+  },
+  "target-dir" : "Watershine/FinebaseBundle",
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "0.1-dev"
+    }
+  }
+}
