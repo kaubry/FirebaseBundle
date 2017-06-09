@@ -1,0 +1,3 @@
+watershine_firebase_homepage:
+    path:     /
+    defaults: { _controller: WatershineFirebaseBundle:Default:index }
