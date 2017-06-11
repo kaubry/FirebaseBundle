@@ -1,4 +1,3 @@
 services:
-#    watershine_firebase.example:
-#        class: Watershine\FirebaseBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+   watershine_firebase.cloud_messaging:
+        class: Watershine\FirebaseBundle\Service\CloudMessagingImpl

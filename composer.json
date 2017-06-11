@@ -13,18 +13,14 @@
     "MIT"
   ],
   "require" : {
+    "php-curl-class/php-curl-class": "^7.3"
   },
   "autoload" : {
     "psr-0" : {
       "Watershine\\FirebaseBundle" : ""
     }
   },
-  "target-dir" : "Watershine/FinebaseBundle",
+  "target-dir" : "Watershine/FirebaseBundle",
   "repositories" : [{
-  }],
-  "extra" : {
-    "branch-alias" : {
-      "dev-master" : "0.1-dev"
-    }
-  }
+  }]
 }
