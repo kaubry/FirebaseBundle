@@ -24,5 +24,17 @@ class WatershineFirebaseExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $cloudMessagingService = $container->getDefinition( 'watershine_firebase.cloud_messaging' );
+        $cloudMessagingService->addMethodCall( 'setFirebaseURL', array( $config[ 'firebase_url' ] ) );
+        $cloudMessagingService->addMethodCall( 'setAuthorizationKey', array( $config[ 'authorization_key' ] ) );
+
     }
+
+    public function getAlias()
+    {
+        return 'watershine_firebase';
+    }
+
+
 }

@@ -2,3 +2,6 @@ framework:
     secret: test
     session:
         storage_id: session.storage.mock_file
+
+watershine_firebase:
+    authorization_key: <YOUR_KEY_HERE>

@@ -20,6 +20,13 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('watershine_firebase');
 
+        $rootNode
+            ->children()
+                ->scalarNode('firebase_url')->defaultValue('https://fcm.googleapis.com/fcm/send')->end()
+                ->scalarNode('authorization_key')->end()
+            ->end();
+
+
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
         // more information on that topic.

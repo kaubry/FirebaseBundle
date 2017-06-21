@@ -1,3 +1,5 @@
 services:
-   watershine_firebase.cloud_messaging:
+    watershine_firebase.cloud_messaging:
         class: Watershine\FirebaseBundle\Service\CloudMessagingImpl
+
+    Watershine\FirebaseBundle\Service\CloudMessagingInterface: '@watershine_firebase.cloud_messaging'
